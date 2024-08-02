@@ -3,11 +3,11 @@ import CartReducer from './CartReducer'
 
 export const CartContext = createContext()
 
-const ContextProvider = ({childern}) => {
-  const [cart, dispatch] = useReducer(CartReducer,[])
+const ContextProvider = ({children}) => {
+    const [cart, dispatch] = useReducer(CartReducer, [])
   return (
     <CartContext.Provider value={{cart, dispatch}}>
-{childern}
+        {children}
     </CartContext.Provider>
   )
 }
