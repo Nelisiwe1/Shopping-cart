@@ -7,11 +7,16 @@ const CartReducer = (state, action) => {
         case "Remove":
 
         case "Increase":
-
+            const indexI = state.findIndex(p => p.id === action.id)
+            state[indexI].quantity += 1
+            return [...state]
         case "Decrease":
+            const indexD = state.findIndex(p => p.id === action.id)
+            state[indexD].quantity -= 1
+            return [...state]
             default:
-                state
+                state;
     }
 }
 
-export default CartReducer
+export default CartReducer;
