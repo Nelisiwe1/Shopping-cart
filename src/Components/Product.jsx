@@ -1,8 +1,8 @@
-import React, { useContext, } from "react";
+import React, { useContext } from "react";
 import { CartContext } from "../Feature/ContextProvider";
 
 const Product = ({ product }) => {
-  const {dispatch} = useContext(CartContext)
+  const { dispatch } = useContext(CartContext);
   return (
     <div className="col">
       <div class="card h-100">
