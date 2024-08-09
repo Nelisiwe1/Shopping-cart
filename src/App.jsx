@@ -3,7 +3,7 @@ import Navbar from './Components/Navbar';
 import Products from './Pages/Products';
 import Footer from './Components/Footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Cart from './Components/ '; // Ensure this path is correct
+import Cart from './Pages/cart'; // Ensure this path is correct
 
 function App() {
   return (

@@ -1,4 +1,4 @@
-export const totalItem = (cart) => {
+export const totalItems = (cart) => {
     return cart.reduce((sum, product) => sum + product.quantity , 0)
 }
 
